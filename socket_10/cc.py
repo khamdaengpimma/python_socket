@@ -1,21 +1,9 @@
 
 import tkinter as tk
 import socket as sk
-HOST = '127.0.0.1'
-PORT=2050
+# HOST = '127.0.0.1'
+# PORT=2050
 conn_socket=None
-# def printt():
-#     while True:
-#         with sk.socket(sk.AF_INET, sk.SOCK_STREAM) as s:
-#             s.connect((HOST, PORT))
-#             while True:
-#                 sed = str(input(": "))
-#                 s.sendall(sed.encode())
-#                 data = s.recv(1024)
-#                 print(data.decode())
-#                 print(f"Received {data!r}")
-
-
 def conn_server():
     global conn_socket
     if conn_socket:
