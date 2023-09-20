@@ -34,7 +34,7 @@ def send_all():
 
 root=tk.Tk()
 root.geometry("250x300")
-root.title("Caculator")
+root.title("Server_calculator")
 
 root.resizable(0,0)
 root.columnconfigure(0, weight=1)
@@ -62,13 +62,13 @@ A_name.grid(column=0,row=3,sticky=tk.W,padx=5,pady=5)
 symbols_name.grid(column=0,row=4,sticky=tk.W,padx=5,pady=5)
 B_name.grid(column=0,row=5,sticky=tk.W,padx=5,pady=5)
 
-input_A = tk.Entry(root,font="Roboto",width=20)
-input_S = tk.Entry(root,font="Roboto",width=4)
-input_B = tk.Entry(root,font="Roboto",width=20)
+input_A = tk.Entry(root,font="Roboto",width=10)
+input_S = tk.Entry(root,font="Roboto",width=5)
+input_B = tk.Entry(root,font="Roboto",width=10)
 
-input_A.grid(column=1,row=3,sticky=tk.E,padx=5,pady=5)
+input_A.grid(column=1,row=3,sticky=tk.W,padx=5,pady=5)
 input_S.grid(column=1,row=4,sticky=tk.E,padx=5,pady=5)
-input_B.grid(column=1,row=5,sticky=tk.E,padx=5,pady=5)
+input_B.grid(column=1,row=5,sticky=tk.W,padx=5,pady=5)
 to_button = tk.Button(root,font=("Roboto",12),fg="white", text="=",bg="green",command=send_all)#command=send_all
 to_button.grid(column=1,row=6,sticky=tk.EW,padx=5,pady=5)
 #return
